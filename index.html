@@ -58,16 +58,19 @@
     </style>
 </head>
 <body>
-    <h1>Nepal Trip Cost Distribution</h1>
+    <h1>Nepal Trip Student </h1>
     <div class="container">
         <h2>Total Students: <span id="total-students">0</span></h2>
         <ul id="student-list"></ul>
-        <p class="total">Total Contribution: ₹<span id="total-money">0</span></p>
+        <p class="total"> </p>
+            <!-- ₹<span id="total-money">0</span></p> -->
     </div>
 
     <script>
-        let students = ["Ankush", "Rahul", "Priya", "Sneha"];
-        const tripCost = 35000;
+        let students = ["Aasif", "Aman", "Anand Gond", "Anant Dev", "Ankur Kumar", "Anshika", "Anubhav", "Anurag", "Archita", "Arpita", "Aryan Chaursiya", "Ashutosh Gond", "Ayan", "Avinash Yadav", "Avinash Yadav", "Bipin Prajapati", "Golu Sharma", "Irfan Ansari", "Kaif", "Naitik Chaturvedi", "Paridhi", "Rajan Chauhan", "Rahul Prajapati", "Roshan Singh", "Sanjeeta", "Shivansh Singh", "Sonali", "Sumit Vishwakarma", "Sunidhi", "Vijay", "Vishal", "Zaid"];
+
+
+        const tripCost = 30000;
 
         function updateDisplay() {
             const studentList = document.getElementById('student-list');
@@ -84,7 +87,7 @@
             studentList.innerHTML = "";
             students.forEach((student, index) => {
                 const li = document.createElement('li');
-                li.textContent = `${index + 1}. ${student} - ₹${perStudent}`;
+                li.textContent = `${index + 1}. ${student}`;
                 studentList.appendChild(li);
             });
 
